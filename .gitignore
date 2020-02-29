@@ -108,3 +108,4 @@ dist
 .idea
 scripts/*
 !scripts/init
+routes/api.js
