@@ -4,13 +4,7 @@ const { execSync } = require('child_process');
 
 router.get('/', function(req, res, next) {
   res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify({status:"success"}));
-});
-
-router.get('/portfolio/build/passed', function(req, res, next) {
-  res.setHeader('Content-Type', 'application/json');
-  const stdout = execSync('ls');
-  res.send(JSON.stringify({status:"Build Passed"}));
+  res.send(JSON.stringify({status:"it works!"}));
 });
 
 router.get('*', function(req, res, next) {
