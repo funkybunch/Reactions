@@ -14,9 +14,3 @@ router.get('*', function(req, res, next) {
 });
 
 module.exports = router;
-
-// stderr is sent to stdout of parent process
-// you can set options.stdio if you want it to go elsewhere
-console.error('error', child.error);
-console.log('stdout ', child.stdout);
-console.error('stderr ', child.stderr);
